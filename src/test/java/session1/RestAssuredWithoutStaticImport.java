@@ -1,11 +1,12 @@
 package session1;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Test_GetMethod {
+public class RestAssuredWithoutStaticImport {
 //https://reqres.in/api/users?page=2
 	
 	@Test
@@ -19,5 +20,25 @@ public class Test_GetMethod {
 		System.out.println("Response Header content type : " + resp.header("Content-Type"));
 		System.out.println("Response Headers : " + resp.headers());
 		System.out.println("Response Time : " + resp.time());
+		
+		
+		//validate status code as 200
+		int expectedStatusCode = resp.getStatusCode();
+		int actualStatusCode = 200;
+		Assert.assertEquals(actualStatusCode, expectedStatusCode);
+	}
+	
+	//writing in BDD style 
+	@Test
+	public void testBDD() {
+		//using given, when then
+		RestAssured.baseURI ="https://reqres.in/api/users/";
+		
+		RestAssured.given()
+			.queryParam("page", "2")
+		.when()
+			.get()
+		.then()
+			.statusCode(200);
 	}
 }

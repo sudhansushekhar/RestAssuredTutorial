@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-16T11:46:59 IST" name="Default suite" finished-at="2025-01-16T11:47:00 IST" duration-ms="1457">
+  <suite started-at="2025-01-16T19:54:46 IST" name="Default suite" finished-at="2025-01-16T19:54:47 IST" duration-ms="1764">
     <groups>
     </groups>
-    <test started-at="2025-01-16T11:46:59 IST" name="Default test" finished-at="2025-01-16T11:47:00 IST" duration-ms="1457">
-      <class name="session1.Test_GetMethod">
-        <test-method signature="test01()[pri:0, instance:session1.Test_GetMethod@206a70ef]" started-at="2025-01-16T11:46:59 IST" name="test01" finished-at="2025-01-16T11:47:00 IST" duration-ms="1421" status="PASS">
+    <test started-at="2025-01-16T19:54:46 IST" name="Default test" finished-at="2025-01-16T19:54:47 IST" duration-ms="1764">
+      <class name="session2.checkForValidResponse">
+        <test-method signature="getSingleUSerBDD_style()[pri:0, instance:session2.checkForValidResponse@22555ebf]" started-at="2025-01-16T19:54:46 IST" name="getSingleUSerBDD_style" finished-at="2025-01-16T19:54:47 IST" duration-ms="1721" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test01 -->
-      </class> <!-- session1.Test_GetMethod -->
+        </test-method> <!-- getSingleUSerBDD_style -->
+      </class> <!-- session2.checkForValidResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
